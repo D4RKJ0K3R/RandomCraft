@@ -8,9 +8,22 @@ authors: [CodeRandom]
 description: RandomCraft is the core plugin of all RandomCraft plugins making them light weight
 website: https://craft.coderandom.org/
 permissions:
-  randomcraft.TEST:
+  randomcraft.*:
     default: op
-    description: Allows access to /test.
+    description: Allows access to all.
+    children:
+      randomcraft.TEST: true
+      randomcraft.home.*: true
+      randomcraft.heal: true
+      randomcraft.heal.other: true
+
+  randomcraft.heal:
+    default: false
+    description: Allows access to /heal
+
+  randomcraft.heal.other:
+    default: false
+    description: Allows access to /heal [playerName]
 
   randomcraft.homes.*:
     default: op
@@ -54,6 +67,12 @@ permissions:
     description: Allows access to deleting homes.
 
 commands:
+
+  heal:
+    usage: /<command>, /<command> [playerName]
+    aliases: ["restore"]
+    description: Allows access to /heal
+    permission: randomcraft.heal
 
   deletehome:
     usage: /<command>, /<command> [home name], /command [player name] [home name]

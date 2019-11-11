@@ -49,6 +49,7 @@ public final class RandomCraft extends JavaPlugin {
         questManager = new QuestManager();
         new SkullsManager();
         new EventManager();
+        new CommandManager();
 
         add("test", new TESTCOMMAND());
 //        getServer().getOnlinePlayers().forEach(player -> player.setStatistic(Statistic.MINE_BLOCK, Material.STONE,120));

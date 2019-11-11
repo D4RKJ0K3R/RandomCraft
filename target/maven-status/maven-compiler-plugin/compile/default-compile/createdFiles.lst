@@ -82,9 +82,11 @@ org\coderandom\random_craft\questing\CatagoryManager$1$4.class
 org\coderandom\random_craft\questing\end_adventure_quests\Enderman_Quests.class
 org\coderandom\random_craft\questing\QuestManager$6.class
 org\coderandom\random_craft\utils\ItemUtil$3$1.class
+org\coderandom\random_craft\CommandManager.class
 org\coderandom\random_craft\questing\mining_quests\DiamondOre_Quests.class
 org\coderandom\random_craft\RandomCraft.class
 org\coderandom\random_craft\questing\mining_quests\QuartzOre_Quests$3.class
+org\coderandom\random_craft\commands\Heal_Command.class
 org\coderandom\random_craft\questing\BaseQuest$CraftEvent.class
 org\coderandom\random_craft\questing\slaying_quests\Creeper_Quests.class
 org\coderandom\random_craft\utils\UIUtil.class
