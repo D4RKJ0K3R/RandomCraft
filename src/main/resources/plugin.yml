@@ -1,0 +1,92 @@
+name: RandomCraft
+version: ${project.version}
+main: org.coderandom.random_craft.RandomCraft
+api-version: "1.14"
+prefix: RandomCraft
+load: STARTUP
+authors: [CodeRandom]
+description: RandomCraft is the core plugin of all RandomCraft plugins making them light weight
+website: https://craft.coderandom.org/
+permissions:
+  randomcraft.TEST:
+    default: op
+    description: Allows access to /test.
+
+  randomcraft.homes.*:
+    default: op
+    description: Allows access to all home commands.
+    children:
+      randomcraft.homes.tp: true
+      randomcraft.homes.other: true
+      randomcraft.homes.set: true
+      randomcraft.homes.delete: true
+      randomcraft.homes.list: true
+
+  randomcraft.quests:
+    default: true
+    description: Gives access to quests menu.
+    children:
+      randomcraft.quest: true
+
+  randomcraft.quest:
+    default: true
+    description: Gives access to quest menus.
+
+  randomcraft.homes.tp:
+    default: true
+    description: Allows access to teleport to thier homes.
+    children:
+      randomcraft.homes.set: true
+      randomcraft.homes.delete: true
+      randomcraft.homes.list: true
+
+  randomcraft.homes.list:
+    description: Allows access to /homes command.
+
+  randomcraft.homes.other:
+    default: false
+    description: Allows access to set/tp/del other players homes.
+
+  randomcraft.homes.set:
+    description: Allows access to setting homes up.
+
+  randomcraft.homes.delete:
+    description: Allows access to deleting homes.
+
+commands:
+
+  deletehome:
+    usage: /<command>, /<command> [home name], /command [player name] [home name]
+    aliases: ["delhome"]
+    description: Allows deleting a home.
+    permission: randomcraft.homes.delete
+
+  home:
+    usage: /<command>, /<command> [home name]
+    description: Teleport to given home
+    permission: randomcraft.homes.tp
+
+  homes:
+    usage: /<command>, /command [player name]
+    description: List all players homes.
+    permission: randomcraft.homes.list
+
+  sethome:
+    usage: /<command>, /<command> [home name], /command [player name] [home name]
+    description: Allows setting a home.
+    permission: randomcraft.homes.set
+
+  quests:
+    usage: /<command>, /<command> [category]
+    description: Shows the questing gui.
+    permission: randomcraft.quests
+
+  quest:
+    usage: /<command> [questID]
+    description: Shows a quests ui.
+    permission: randomcraft.quest
+
+  test:
+    usage: /<command>
+    description: JUST A TEST COMMAND
+    permission: randomcraft.TEST

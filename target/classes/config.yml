@@ -1,0 +1,30 @@
+#    _____                 _                  _____                 #
+#   |  __ \               | |                / ____|                #
+#   | |__) |__ _ _ __   __| | ___  _ __ ___ | |     ___  _ __ ___   #
+#   |  _  // _` | '_ \ / _` |/ _ \| '_ ` _ \| |    / _ \| '__/ _ \  #
+#   | | \ \ (_| | | | | (_| | (_) | | | | | | |___| (_) | | |  __/  #
+#   |_|  \_\__,_|_| |_|\__,_|\___/|_| |_| |_|\_____\___/|_|  \___|  #
+#                                                                   #
+#       For more help visit https://coderandom.org/RandomCore/      #
+#           to reset this file delete it and reboot server          #
+
+# Your servers Name supports minecraft formatting codes https://minecraft.gamepedia.com/Formatting_codes
+Server Name: "§2RandomCraft"
+
+# Your Servers IP address
+IP: "192.168.0.1"
+
+# How long a player has to wait after teleporting in seconds until can teleport again
+Teleport Cool Down: 15
+
+# MongoDB connection string to store servers data
+MongoDB Connection String: "mongodb://localhost:27017"
+
+# Player Defaults set values to what you want new players data to be set to
+Wallet: 100
+Bank: 100
+Tokens: 10
+
+# Heads drop chance
+Player Head Drop Chance: 15
+Mob Head Drop Chance: 15
