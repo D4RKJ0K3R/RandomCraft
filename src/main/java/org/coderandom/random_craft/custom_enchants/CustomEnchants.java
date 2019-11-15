@@ -87,6 +87,28 @@ public class CustomEnchants implements Listener {
                 add(new SpawnerSheep_Enchantment());
                 add(new SpawnerShulker_Enchantment());
                 add(new SpawnerSilverFish_Enchantment());
+                add(new SpawnerSkeleton_Enchantment());
+                add(new SpawnerSkeletonHorse_Enchantment());
+                add(new SpawnerSlime_Enchantment());
+                add(new SpawnerSnowGolem_Enchantment());
+                add(new SpawnerSpider_Enchantment());
+                add(new SpawnerSquid_Enchantment());
+                add(new SpawnerStray_Enchantment());
+                add(new SpawnerTNT_Enchantment());
+                add(new SpawnerTropicalFish_Enchantment());
+                add(new SpawnerTurtle_Enchantment());
+                add(new SpawnerVex_Enchantment());
+                add(new SpawnerVillager_Enchantment());
+                add(new SpawnerVindicator_Enchantment());
+                add(new SpawnerWanderingTrader_Enchantment());
+                add(new SpawnerWitch_Enchantment());
+                add(new SpawnerWither_Enchantment());
+                add(new SpawnerWitherSkeleton_Enchantment());
+                add(new SpawnerWolf_Enchantment());
+                add(new SpawnerZombie_Enchantment());
+                add(new SpawnerZombieHorse_Enchantment());
+                add(new SpawnerZombiePigman_Enchantment());
+                add(new SpawnerZombieVillager_Enchantment());
             }
         };
 
@@ -95,7 +117,7 @@ public class CustomEnchants implements Listener {
     }
 
     public static Enchantment spawnerEnchant(EntityType entityType) {
-        AtomicReference<Enchantment> enchant = new AtomicReference<>(new SpawnerPig_Enchantment());
+        AtomicReference<Enchantment> enchant = new AtomicReference<>();
 
         spawnerEnchants.forEach(enchantment -> {
             if (((SpawnerWrapper) enchantment).getEntityType().equals(entityType)) {

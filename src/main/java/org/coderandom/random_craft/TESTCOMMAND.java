@@ -15,7 +15,7 @@ public class TESTCOMMAND implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         ((Player) sender).getInventory().addItem(new ItemStack(Material.EMERALD, 64) {
             {
-                ItemMeta meta = CustomEnchants.addEnchant(this, CustomEnchants.spawnerEnchant(EntityType.SILVERFISH), 1).getItemMeta();
+                ItemMeta meta = CustomEnchants.addEnchant(this, CustomEnchants.spawnerEnchant(EntityType.ZOMBIE_VILLAGER), 1).getItemMeta();
                 setItemMeta(meta);
             }
         });
