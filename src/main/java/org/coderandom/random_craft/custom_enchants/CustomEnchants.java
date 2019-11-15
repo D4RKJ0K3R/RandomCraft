@@ -244,7 +244,7 @@ public class CustomEnchants implements Listener {
                 itemStack.getItemMeta().getEnchants().forEach((enchantment, integer) -> levels.addAndGet(Math.max(1, getLevel(itemStack, enchantment))));
             }
 
-        return (levels.get());
+        return (levels.get() * itemStack.getAmount());
     }
 
     public static ItemStack removeAll(ItemStack itemStack) {

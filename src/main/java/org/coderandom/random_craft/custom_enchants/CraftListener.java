@@ -2,6 +2,8 @@ package org.coderandom.random_craft.custom_enchants;
 
 import org.bukkit.Material;
 import org.bukkit.Sound;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.ExperienceOrb;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -26,8 +28,12 @@ public class CraftListener implements Listener {
                     event.getPlayer().getInventory().setItemInMainHand(new ItemStack(item) {
                         {
                             int level = CustomEnchants.getTotalLevels(this);
-
                             if (level > 0) {
+                                if (CustomEnchants.hasMending(event.getPlayer())) {
+                                    ExperienceOrb orb = (ExperienceOrb) event.getPlayer().getWorld().spawnEntity(event.getPlayer().getLocation(), EntityType.EXPERIENCE_ORB);
+                                    orb.setExperience(10);
+                                }
+
                                 setItemMeta(CustomEnchants.removeAll(this).getItemMeta());
                                 event.getPlayer().giveExpLevels(level);
                                 event.getPlayer().getWorld().playSound(event.getClickedBlock().getLocation(), Sound.BLOCK_GRINDSTONE_USE, 1, 1);

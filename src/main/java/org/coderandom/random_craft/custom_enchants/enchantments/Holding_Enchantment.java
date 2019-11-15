@@ -2,6 +2,8 @@ package org.coderandom.random_craft.custom_enchants.enchantments;
 
 import org.bukkit.Material;
 import org.bukkit.Sound;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.ExperienceOrb;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -63,6 +65,12 @@ public class Holding_Enchantment extends CustomWrapper {
                     if (CustomEnchants.getLevel(item, this) > 0) {
                         event.setCancelled(true);
                         event.getPlayer().giveExpLevels(CustomEnchants.getTotalLevels(item));
+
+                        if (CustomEnchants.hasMending(event.getPlayer())) {
+                            ExperienceOrb orb = (ExperienceOrb) event.getPlayer().getWorld().spawnEntity(event.getPlayer().getLocation(), EntityType.EXPERIENCE_ORB);
+                            orb.setExperience(10);
+                        }
+
                         event.getPlayer().getWorld().playSound(event.getClickedBlock().getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                         event.getPlayer().getInventory().setItemInMainHand(new ItemStack(item){
                             {
