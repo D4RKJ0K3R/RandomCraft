@@ -1,7 +1,9 @@
 package org.coderandom.random_craft.utils;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Effect;
 import org.bukkit.Location;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -50,7 +52,11 @@ public class TeleportBuffer implements Listener {
                 if (buffer.containsKey(player)) {
                     buffer.remove(player);
                     player.sendMessage("§2Teleporting§6!");
+                    player.getWorld().playSound(player.getLocation(), Sound.ENTITY_SHULKER_TELEPORT, 1, 1);
+                    player.getWorld().playEffect(player.getLocation(), Effect.ENDER_SIGNAL, 1);
                     player.teleport(location);
+                    player.getWorld().playSound(location, Sound.ENTITY_SHULKER_TELEPORT, 1, 1);
+                    player.getWorld().playEffect(location, Effect.ENDER_SIGNAL, 1);
                 } else {
                     cancel();
                 }

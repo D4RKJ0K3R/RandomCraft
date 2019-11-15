@@ -12,6 +12,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.coderandom.random_craft.custom_enchants.CustomEnchants;
 import org.coderandom.random_craft.player_homes.PlayerHomes;
 import org.coderandom.random_craft.questing.QuestManager;
 import org.coderandom.random_craft.skulls.SkullsManager;
@@ -50,6 +51,7 @@ public final class RandomCraft extends JavaPlugin {
         new SkullsManager();
         new EventManager();
         new CommandManager();
+        new CustomEnchants();
 
         add("test", new TESTCOMMAND());
 //        getServer().getOnlinePlayers().forEach(player -> player.setStatistic(Statistic.MINE_BLOCK, Material.STONE,120));
@@ -69,7 +71,6 @@ public final class RandomCraft extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        client.close();
         log("§2Disabled§6!");
     }
 

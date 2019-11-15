@@ -28,17 +28,10 @@ public class ItemUtil {
                     {
                         addAll(Arrays.asList(lore));
                         if (meta.getEnchants().size() > 0) {
-                            if (!(meta.getEnchants().size() == 1) && !meta.getEnchants().containsKey(Enchantment.LUCK)) {
-                                add("§2§nEnchantments§6:");
-                            }
+                            meta.getEnchants().forEach((enchantment, level) -> {
+                                add("§2" + Utils.format(enchantment.getKey()) + "§6: §r" + level);
+                            });
                         }
-                        enchantments.forEach((enchantment, level) -> {
-                            if (enchantment.equals(Enchantment.LUCK)) {
-                                return;
-                            }
-
-                            add("§2" + Utils.format(enchantment.getKey()) + "§6: §r" + level);
-                        });
                     }
                 });
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
