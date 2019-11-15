@@ -2,8 +2,9 @@ package org.coderandom.random_craft.custom_enchants.spawner_enchants;
 
 import org.bukkit.entity.EntityType;
 import org.coderandom.random_craft.custom_enchants.CustomEnchants;
+import org.coderandom.random_craft.custom_enchants.CustomWrapper;
 
-public class SpawnerRabbit_Enchantment extends SpawnerWrapper {
+public class SpawnerRabbit_Enchantment extends CustomWrapper.SpawnerWrapper {
     public SpawnerRabbit_Enchantment() {
         super(EntityType.RABBIT);
         CustomEnchants.register(this);

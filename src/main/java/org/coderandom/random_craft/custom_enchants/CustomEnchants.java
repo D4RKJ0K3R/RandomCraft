@@ -39,6 +39,8 @@ public class CustomEnchants implements Listener {
     public static Enchantment INCENDIARY = new Incendiary_Enchantment();
     public static Enchantment NIGHTVISION = new NightVision_Enchantment();
     public static Enchantment DROWNED = new TheDrowned_Enchantment();
+    public static Enchantment MINERS_TOUCH = new MinersTouch_Enchantment();
+    public static Enchantment SMELT = new Smelt_Enchant();
 
     public static ArrayList<Enchantment> spawnerEnchants;
 
@@ -120,7 +122,7 @@ public class CustomEnchants implements Listener {
         AtomicReference<Enchantment> enchant = new AtomicReference<>();
 
         spawnerEnchants.forEach(enchantment -> {
-            if (((SpawnerWrapper) enchantment).getEntityType().equals(entityType)) {
+            if (((CustomWrapper.SpawnerWrapper) enchantment).getEntityType().equals(entityType)) {
                 enchant.set(enchantment);
             }
         });

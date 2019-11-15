@@ -8,6 +8,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.coderandom.random_craft.custom_enchants.CustomEnchants;
+import org.coderandom.random_craft.custom_enchants.CustomWrapper;
 
 import java.util.ArrayList;
 

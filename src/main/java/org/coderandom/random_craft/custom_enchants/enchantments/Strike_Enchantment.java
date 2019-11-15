@@ -10,16 +10,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.coderandom.random_craft.RandomCraft;
 import org.coderandom.random_craft.custom_enchants.CustomEnchants;
-
-import java.util.ArrayList;
+import org.coderandom.random_craft.custom_enchants.CustomWrapper;
 
 public class Strike_Enchantment extends CustomWrapper {
     public Strike_Enchantment() {
-        super("strike", 1, 3,
-                new ArrayList<>(){},
-                EnchantmentTarget.BOW,
-                EnchantmentTarget.CROSSBOW
-        );
+        super("strike", 1, 3, EnchantmentTarget.BOW, EnchantmentTarget.CROSSBOW);
         CustomEnchants.register(this);
     }
 

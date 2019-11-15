@@ -13,8 +13,8 @@ import org.bukkit.event.entity.ProjectileLaunchEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 import org.coderandom.random_craft.custom_enchants.CustomEnchants;
+import org.coderandom.random_craft.custom_enchants.CustomWrapper;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -23,7 +23,7 @@ public class Explosive_Enchantment extends CustomWrapper {
     private static HashMap<UUID, Integer> buffer;
 
     public Explosive_Enchantment() {
-        super("explosive", 1, 5, new ArrayList<>(), EnchantmentTarget.CROSSBOW, EnchantmentTarget.BOW);
+        super("explosive", 1, 3, EnchantmentTarget.CROSSBOW, EnchantmentTarget.BOW);
         CustomEnchants.register(this);
         buffer = new HashMap<>();
     }

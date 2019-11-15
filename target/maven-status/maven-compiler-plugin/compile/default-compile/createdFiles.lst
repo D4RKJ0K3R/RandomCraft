@@ -1,11 +1,9 @@
 org\coderandom\random_craft\questing\mining_quests\EmeraldOre_Quests.class
 org\coderandom\random_craft\questing\mining_quests\WetSponge_Quests$3.class
-org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerWrapper.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerDrowned_Enchantment.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerZombieHorse_Enchantment.class
 org\coderandom\random_craft\questing\adventure_quests\RaidWin_Quests.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerZombie_Enchantment.class
-org\coderandom\random_craft\custom_enchants\enchantments\CustomWrapper$1.class
 org\coderandom\random_craft\questing\BaseQuest$3.class
 org\coderandom\random_craft\questing\mining_quests\DiamondOre_Quests$2.class
 org\coderandom\random_craft\utils\ItemUtil$4.class
@@ -23,6 +21,7 @@ org\coderandom\random_craft\questing\hunting_quests\Mooshroom_Quests.class
 org\coderandom\random_craft\custom_enchants\enchantments\Holding_Enchantment$2.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerTropicalFish_Enchantment.class
 org\coderandom\random_craft\questing\CatagoryManager$1$2.class
+org\coderandom\random_craft\custom_enchants\CustomWrapper$SpawnerWrapper.class
 org\coderandom\random_craft\utils\ItemUtil.class
 org\coderandom\random_craft\utils\TeleportBuffer$1.class
 org\coderandom\random_craft\utils\ItemUtil$3.class
@@ -58,7 +57,6 @@ org\coderandom\random_craft\questing\hunting_quests\Rabbit_Quests.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerStray_Enchantment.class
 org\coderandom\random_craft\questing\BaseQuest$RaidWinEvent.class
 org\coderandom\random_craft\questing\CatagoryManager$1$4.class
-org\coderandom\random_craft\custom_enchants\enchantments\Strike_Enchantment$2.class
 org\coderandom\random_craft\custom_enchants\enchantments\NightVision_Enchantment.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerLightning_Enchantment.class
 org\coderandom\random_craft\RandomCraft.class
@@ -69,7 +67,6 @@ org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerVindicator_E
 org\coderandom\random_craft\questing\slaying_quests\Creeper_Quests.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerWitch_Enchantment.class
 org\coderandom\random_craft\utils\UIUtil.class
-org\coderandom\random_craft\custom_enchants\enchantments\Telekinesis_Enchantment$2.class
 org\coderandom\random_craft\questing\mining_quests\GoldOre_Quests.class
 org\coderandom\random_craft\questing\BaseQuest$DeathEvent.class
 org\coderandom\random_craft\questing\mining_quests\LapisOre_Quests$2.class
@@ -92,7 +89,6 @@ org\coderandom\random_craft\utils\CollectionUtil.class
 org\coderandom\random_craft\questing\mining_quests\QuartzOre_Quests$2.class
 org\coderandom\random_craft\questing\slaying_quests\QuestMenu.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerPig_Enchantment.class
-org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerWrapper$2.class
 org\coderandom\random_craft\custom_enchants\enchantments\TheDrowned_Enchantment.class
 org\coderandom\random_craft\questing\craftting_quests\Beacon_Quests.class
 org\coderandom\random_craft\questing\hunting_quests\Chicken_Quests.class
@@ -107,7 +103,6 @@ org\coderandom\random_craft\questing\mining_quests\LapisOre_Quests$4.class
 org\coderandom\random_craft\questing\end_adventure_quests\Netherrack_Quests.class
 org\coderandom\random_craft\player_homes\commands\SetHome.class
 org\coderandom\random_craft\questing\slaying_quests\Slime_Quests.class
-org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerWrapper$1.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerPanda_Enchantment.class
 org\coderandom\random_craft\utils\YamlUtil.class
 org\coderandom\random_craft\utils\ItemUtil$5.class
@@ -119,6 +114,7 @@ org\coderandom\random_craft\questing\hunting_quests\Cow_Quests.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerPhantom_Enchantment.class
 org\coderandom\random_craft\questing\mining_quests\IronOre_Quests$1.class
 org\coderandom\random_craft\custom_enchants\enchantments\NightVision_Enchantment$1.class
+org\coderandom\random_craft\custom_enchants\CustomWrapper$SpawnerWrapper$1.class
 org\coderandom\random_craft\questing\hunting_quests\Bat_Quests.class
 org\coderandom\random_craft\questing\mining_quests\LapisOre_Quests$3.class
 org\coderandom\random_craft\utils\ItemUtil$1.class
@@ -189,6 +185,7 @@ org\coderandom\random_craft\questing\slaying_quests\Skeleton_Quests.class
 org\coderandom\random_craft\custom_enchants\CustomEnchants.class
 org\coderandom\random_craft\questing\mining_quests\EmeraldOre_Quests$4.class
 org\coderandom\random_craft\questing\end_adventure_quests\Enderman_Quests.class
+org\coderandom\random_craft\custom_enchants\CustomWrapper.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerSnowGolem_Enchantment.class
 org\coderandom\random_craft\questing\QuestManager$6.class
 org\coderandom\random_craft\utils\ItemUtil$3$1.class
@@ -221,7 +218,7 @@ org\coderandom\random_craft\questing\CatagoryManager$1$5$1.class
 org\coderandom\random_craft\player_homes\commands\Homes.class
 org\coderandom\random_craft\custom_enchants\CustomEnchants$1.class
 org\coderandom\random_craft\utils\NMS_1_14_4.class
-org\coderandom\random_craft\custom_enchants\enchantments\CustomWrapper.class
+org\coderandom\random_craft\custom_enchants\enchantments\Smelt_Enchant$2.class
 org\coderandom\random_craft\custom_enchants\enchantments\Strike_Enchantment.class
 org\coderandom\random_craft\questing\CatagoryManager.class
 org\coderandom\random_craft\questing\mining_quests\WetSponge_Quests$1.class
@@ -236,6 +233,7 @@ org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerCreeper_Ench
 org\coderandom\random_craft\EventManager.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerVex_Enchantment.class
 org\coderandom\random_craft\questing\BaseQuest$1$1.class
+org\coderandom\random_craft\custom_enchants\CustomWrapper$SpawnerWrapper$2.class
 org\coderandom\random_craft\questing\hunting_quests\Sheep_Quests.class
 org\coderandom\random_craft\questing\BaseQuest$4.class
 org\coderandom\random_craft\questing\mining_quests\LapisOre_Quests.class
@@ -249,6 +247,7 @@ org\coderandom\random_craft\questing\mining_quests\Stone_Quests$3.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerWolf_Enchantment.class
 org\coderandom\random_craft\questing\slaying_quests\Husk_Quests.class
 org\coderandom\random_craft\custom_enchants\spawner_enchants\SpawnerRavager_Enchantment.class
+org\coderandom\random_craft\custom_enchants\CustomWrapper$1.class
 org\coderandom\random_craft\questing\adventure_quests\RavagerSlay_Quest.class
 org\coderandom\random_craft\questing\commands\QuestCommand.class
 org\coderandom\random_craft\questing\slaying_quests\Drowned_Quests.class

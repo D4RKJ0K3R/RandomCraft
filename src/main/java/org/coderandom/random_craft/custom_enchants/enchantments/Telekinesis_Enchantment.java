@@ -15,6 +15,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.coderandom.random_craft.RandomCraft;
 import org.coderandom.random_craft.custom_enchants.CustomEnchants;
+import org.coderandom.random_craft.custom_enchants.CustomWrapper;
 import org.coderandom.random_craft.utils.Utils;
 
 import java.util.ArrayList;
@@ -28,17 +29,7 @@ public class Telekinesis_Enchantment extends CustomWrapper {
     private static List<Double> zBuffer;
 
     public Telekinesis_Enchantment() {
-        super("telekinesis", 1, 1,
-                new ArrayList<>(){
-                    {
-
-                    }
-                },
-                EnchantmentTarget.TOOL,
-                EnchantmentTarget.WEAPON,
-                EnchantmentTarget.BOW,
-                EnchantmentTarget.CROSSBOW
-        );
+        super("telekinesis", EnchantmentTarget.TOOL, EnchantmentTarget.WEAPON, EnchantmentTarget.BOW, EnchantmentTarget.CROSSBOW);
         CustomEnchants.register(this);
         worldBuffer = new ArrayList<>();
         xBuffer = new ArrayList<>();

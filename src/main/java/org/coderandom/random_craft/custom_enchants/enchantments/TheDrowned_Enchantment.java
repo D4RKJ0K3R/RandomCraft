@@ -9,12 +9,11 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.coderandom.random_craft.RandomCraft;
 import org.coderandom.random_craft.custom_enchants.CustomEnchants;
-
-import java.util.ArrayList;
+import org.coderandom.random_craft.custom_enchants.CustomWrapper;
 
 public class TheDrowned_Enchantment extends CustomWrapper {
     public TheDrowned_Enchantment() {
-        super("the_drowned", 1, 1, new ArrayList<>(), EnchantmentTarget.ARMOR_HEAD);
+        super("the_drowned", EnchantmentTarget.ARMOR_HEAD);
         CustomEnchants.register(this);
 
         new BukkitRunnable() {

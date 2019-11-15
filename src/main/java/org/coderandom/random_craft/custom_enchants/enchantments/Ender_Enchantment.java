@@ -11,6 +11,7 @@ import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.entity.ProjectileLaunchEvent;
 import org.bukkit.inventory.ItemStack;
 import org.coderandom.random_craft.custom_enchants.CustomEnchants;
+import org.coderandom.random_craft.custom_enchants.CustomWrapper;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -19,7 +20,7 @@ public class Ender_Enchantment extends CustomWrapper {
     private static ArrayList<UUID> buffer;
 
     public Ender_Enchantment() {
-        super("ender", 1, 1,new ArrayList<>(), EnchantmentTarget.CROSSBOW, EnchantmentTarget.BOW);
+        super("ender", EnchantmentTarget.CROSSBOW, EnchantmentTarget.BOW);
         CustomEnchants.register(this);
         buffer = new ArrayList<>();
     }
